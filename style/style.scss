@@ -1,0 +1,735 @@
+@import "./variables";
+@import "./mixins";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "Post No Bills Colombo ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Colombo ExtraBold"),
+    url("../fonts/PostNoBillsColombo-ExtraBold.woff") format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+
+.header {
+  background: $green;
+  width: 1500px;
+  height: 674px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+
+  &__ul {
+    display: flex;
+    @include position(absolute, 28px, 757px);
+    font-family: $shortF;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    gap: 34px;
+    justify-content: center;
+    list-style: none;
+  }
+
+  a:hover {
+    border-bottom: 5px solid #ffd748;
+  }
+
+  &__logo {
+    cursor: pointer;
+    @include position(absolute, 9px, 35px);
+    @include text($yellow, 55px, "Post No Bills Colombo ExtraBold");
+  }
+}
+
+#User_cicrle_duotone {
+  cursor: pointer;
+  @include position(absolute, 25px, 1390px);
+}
+
+#Basket_alt_3_duotone {
+  cursor: pointer;
+  @include position(absolute, 25px, 1430px);
+}
+
+#adText {
+  @include position(absolute, 237px, 99px);
+  @include text(#ffffff, 55px, $mainF);
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#couch {
+  @include position(absolute, 136px, 602px);
+  z-index: 9999;
+}
+
+#dots {
+  @include position(absolute, 212px, 1166px);
+}
+
+button {
+  cursor: pointer !important;
+  border-radius: 30px !important;
+  width: 160px;
+  height: 50px;
+  font-family: $shortF !important;
+  font-size: 20px !important;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid;
+}
+
+#b1 {
+  @include position(absolute, 460px, 112px);
+  background: $yellow;
+  border-color: $yellow;
+}
+
+.b2 {
+  @include position(absolute, 460px, 296px);
+  border-color: rgba(255, 255, 255, 1);
+  background: $green;
+}
+
+.mainPart {
+  width: 1500px;
+  height: 3950px;
+  background: $offwhite;
+  #title1 {
+    font-weight: 600 !important;
+    line-height: 51px;
+    @include text($black, 34px, $shortF);
+    @include position(absolute, 674px+80.92px, 99px);
+  }
+
+  #viewPosts:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffd748;
+    text-decoration-thickness: 3px;
+  }
+
+  .text {
+    font-weight: 400 !important;
+    line-height: 24px;
+    text-decoration: none !important;
+    @include text(#6a6a6a, 14px, $productD);
+  }
+
+  #text1 {
+    @include position(absolute, 674px+224.88px, 99px);
+  }
+
+  .second {
+    @include position(absolute, 674px+332.14px, 99px);
+    border-color: rgba(255, 255, 255, 1);
+    background: $green;
+    @include text($white, 20px, $shortF);
+    font-weight: 400;
+  }
+
+  .chair {
+    width: 296px;
+    height: 288.86px;
+    border-radius: 20px;
+    background: #35736e1a;
+    cursor: pointer;
+
+    .productN {
+      text-decoration: none !important;
+      font-family: $shortF;
+      color: #2f2f2f !important;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    #one {
+      @include position(absolute, 191.94px, 93px);
+    }
+    #two {
+      @include position(absolute, 191.94px, 83px);
+    }
+    #three {
+      @include position(absolute, 191.94px, 83px);
+    }
+
+    .price {
+      color: #2f2f2f !important;
+      text-decoration: none !important;
+      font-family: $productD;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+      @include position(absolute, 215.47px, 115px);
+    }
+  }
+
+  .chair:hover {
+    box-shadow: 3px 5px 4px 0px #00000040;
+  }
+
+  #chair1 {
+    @include position(absolute, 674px+89.39px, 431px);
+    #modernChair {
+      width: 189px;
+      height: 245.58px;
+      position: absolute;
+      left: 54px;
+      bottom: 114.79px;
+    }
+  }
+
+  #chair2 {
+    @include position(absolute, 674px+95.97px, 769px);
+    #kruzoChair {
+      width: 237px;
+      height: 240.88px;
+      position: absolute;
+      left: 44px;
+      bottom: 111.02px;
+    }
+  }
+
+  #chair3 {
+    @include position(absolute, 674px+89.39px, 1107px);
+    #ergonomicChair {
+      width: 157px;
+      height: 221.12px;
+      position: absolute;
+      left: 82px;
+      bottom: 114.79px;
+    }
+  }
+
+  #title2 {
+    font-weight: 600 !important;
+    @include text($black, 34px, $shortF);
+    @include position(absolute, 674px+604.07px, 99px);
+  }
+
+  #text2 {
+    @include position(absolute, 674px+659.58px, 99px);
+  }
+  #text3 {
+    @include position(absolute, 674px+790.37px, 99px);
+  }
+  #text4 {
+    @include position(absolute, 674px+950.33px, 99px);
+  }
+  #text5 {
+    @include position(absolute, 674px+784.73px, 357px);
+  }
+  #text6 {
+    @include position(absolute, 674px+950.33px, 392px);
+  }
+
+  #truck {
+    @include position(absolute, 674px+726.05px, 99px);
+  }
+  #support {
+    @include position(absolute, 674px+888.23px, 99px);
+  }
+  #Shopbag {
+    @include position(absolute, 674px+724.51px, 392px);
+  }
+  #return {
+    @include position(absolute, 674px+890.95px, 393px);
+  }
+
+  #ellipse {
+    @include position(absolute, 674px+727.33px, 110px);
+  }
+  #ellipse1 {
+    @include position(absolute, 674px+886.34px, 110px);
+  }
+  #ellipse2 {
+    @include position(absolute, 674px+727.33px, 402px);
+  }
+  #ellipse3 {
+    @include position(absolute, 674px+890.11px, 402px);
+  }
+
+  #dots2 {
+    @include position(absolute, 674px+604.07px, 750px);
+  }
+
+  #room {
+    @include position(absolute, 674px+648.27px, 833px);
+  }
+
+  #dots3 {
+    @include position(absolute, 674px+1310.7px, 95px);
+  }
+
+  #room1 {
+    @include position(absolute, 674px+1383.15px, 208px);
+  }
+
+  #room2 {
+    @include position(absolute, 674px+1382.21px, 639px);
+  }
+
+  #room3 {
+    @include position(absolute, 674px+1575.1px, 587px);
+  }
+
+  #title3 {
+    font-weight: 600 !important;
+    line-height: 41px;
+    @include text($black, 34px, $shortF);
+    @include position(absolute, 674px+1444.31px, 943px);
+  }
+
+  #text7 {
+    @include position(absolute, 674px+1547.81px, 943px);
+  }
+  #text8 {
+    line-height: 19px !important;
+    @include position(absolute, 674px+1675.78px, 960px);
+  }
+  #text9 {
+    line-height: 19px !important;
+    @include position(absolute, 674px+1675.78px, 1216px);
+  }
+  #text10 {
+    line-height: 19px !important;
+    @include position(absolute, 674px+1732.23px, 960px);
+  }
+  #text11 {
+    line-height: 19px !important;
+    @include position(absolute, 674px+1732.23px, 1216px);
+  }
+  #circle1 {
+    @include position(absolute, 674px+1682.36px, 939px);
+  }
+  #circle2 {
+    @include position(absolute, 674px+1738.82px, 939px);
+  }
+  #circle3 {
+    @include position(absolute, 674px+1682.36px, 1195px);
+  }
+  #circle4 {
+    @include position(absolute, 674px+1738.82px, 1195px);
+  }
+
+  #button2 {
+    @include position(absolute, 674px+1819.74px, 947px);
+  }
+
+  #rec1 {
+    @include position(absolute, 674px+2137.77px, 175px);
+  }
+
+  #mod {
+    width: 91px;
+    height: 117.61px;
+    @include position(absolute, 674px+2115.18px, 179px);
+  }
+
+  #rec2 {
+    @include position(absolute, 674px+2137.77px, 566px);
+  }
+
+  #aero {
+    width: 113px;
+    height: 115.73px;
+    @include position(absolute, 674px+2114.24px, 566px);
+  }
+
+  #rec3 {
+    @include position(absolute, 674px+2130.24px, 957px);
+  }
+
+  #ergo {
+    width: 78px;
+    height: 111.97px;
+    @include position(absolute, 674px+2114.24px, 965px);
+  }
+
+  .name1 {
+    font-weight: 700px;
+    line-height: 22px;
+    @include text(#000000, $small, $productD);
+  }
+  #m {
+    @include position(absolute, 674px+2137.77px, 306px);
+  }
+
+  #k {
+    @include position(absolute, 674px+2137.77px, 697px);
+  }
+
+  #e {
+    @include position(absolute, 674px+2130.24px, 1088px);
+  }
+
+  #t1 {
+    @include position(absolute, 674px+2168.82px, 306px);
+  }
+
+  #t2 {
+    @include position(absolute, 674px+2168.82px, 697px);
+  }
+
+  #t3 {
+    @include position(absolute, 674px+2161.29px, 1088px);
+  }
+
+  .r {
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 22px;
+    @include text(#6a6a6a, 12px, $productD);
+  }
+
+  #r1 {
+    @include position(absolute, 674px+2220.57px, 306px);
+  }
+
+  #r2 {
+    @include position(absolute, 674px+2220.57px, 697px);
+  }
+
+  #r3 {
+    @include position(absolute, 674px+2213.04px, 1088px);
+  }
+
+  .carousel {
+    width: 1081px;
+    height: 207px;
+    @include position(absolute, 674px+2357px, 209px);
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    filter: invert(100%);
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #000000;
+    border-radius: 50% !important;
+    background-color: #6a6a6a;
+    opacity: 20%;
+    width: 70px !important;
+    height: 70px !important;
+    line-height: 70px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover {
+    background-color: #0028b7;
+  }
+
+  .carousel-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: $shortF;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: center;
+  }
+
+  h3 {
+    @include text($black, 14px, $productD);
+    font-weight: 600 !important;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .carousel2 {
+    width: 165px;
+    height: 165px;
+    justify-content: center;
+    @include position(absolute, 674px+2810px, 668px);
+  }
+
+  .carousel2 img {
+    margin: auto;
+    margin-bottom: 13px;
+    width: 77px !important;
+    height: 77px;
+  }
+
+  .ceoN {
+    font-family: $shortF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+  }
+  .ceoT {
+    font-family: $productD;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: $black;
+  }
+
+  #shipping {
+    @include position(absolute, 674px+761.2px, 99px);
+  }
+
+  #support1 {
+    @include position(absolute, 674px+921.16px, 99px);
+  }
+
+  #shop {
+    @include position(absolute, 674px+761.2px, 392px);
+  }
+
+  #returns {
+    @include position(absolute, 674px+921.16px, 392px);
+  }
+
+  .ideas {
+    font-family: $productD;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: left;
+  }
+
+  #id1 {
+    @include position(absolute, 4243px, 153px);
+  }
+
+  #id2 {
+    @include position(absolute, 4243px, 543px);
+  }
+
+  #id3 {
+    @include position(absolute, 4243px, 933px);
+  }
+
+  #mask4 {
+    cursor: pointer;
+    @include position(absolute, 3950px, 153px);
+  }
+  #mask5 {
+    cursor: pointer;
+    @include position(absolute, 3950px, 543px);
+  }
+  #mask6 {
+    cursor: pointer;
+    @include position(absolute, 3950px, 933px);
+  }
+
+  #title4 {
+    font-family: $shortF;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: left;
+    @include position(absolute, 674px+3135px, 156px);
+  }
+
+  .by {
+    font-family: $productD;
+    font-size: $small;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+  }
+
+  .nana {
+    font-family: $productD;
+    font-size: $small;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.94px;
+    text-align: left;
+  }
+
+  #mail {
+    cursor: pointer;
+    @include position(absolute, 4525.12px, 92.57px);
+  }
+
+  #viewPosts {
+    font-family: $productD;
+    text-decoration: none;
+    color: $black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+    @include position(absolute, 3812px, 1191px);
+  }
+}
+
+footer {
+  width: 1499px !important;
+  height: 767px !important;
+  background: $white;
+
+  #sofa {
+    width: 458px;
+    height: 396.24px;
+    @include position(absolute, 674px+3804px, 906px);
+  }
+
+  h4 {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: left;
+    @include position(absolute, 4709px, 145px);
+  }
+
+  .text {
+    font-weight: 400 !important;
+    line-height: 24px;
+    text-decoration: none !important;
+    @include text(#6a6a6a, 14px, $productD);
+  }
+
+  #subText {
+    @include position(absolute, 674px+4278px, 101px);
+  }
+
+  #subF {
+    @include position(absolute, 674px+4278px, 526px);
+    line-height: 28px;
+  }
+
+  #subS {
+    @include position(absolute, 674px+4278px, 685px);
+  }
+
+  #subTh {
+    @include position(absolute, 674px+4276px, 851px);
+  }
+
+  #subFo {
+    @include position(absolute, 674px+4278px, 999px);
+  }
+
+  #logo {
+    font-weight: 400 !important;
+    @include position(absolute, 674px+4222px, 101px);
+    @include text($green, 34px, "Saira Stencil One");
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .circleForIcons {
+    cursor: pointer;
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    width: 41px;
+    height: 41px;
+  }
+
+  #facebook:hover {
+    // top: 674px+4417px;
+    @include position(absolute, 674px+4417px, 65px);
+  }
+
+  #instagram:hover {
+    @include position(absolute, 674px+4417px, 117px);
+  }
+
+  #twitter:hover {
+    @include position(absolute, 674px+4417px, 169px);
+  }
+
+  #linkedin:hover {
+    @include position(absolute, 674px+4417px, 221px);
+  }
+
+  .circleForIcons img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #facebook {
+    @include position(absolute, 674px+4419px, 65px);
+  }
+
+  #instagram {
+    @include position(absolute, 674px+4419px, 117px);
+  }
+
+  #twitter {
+    @include position(absolute, 674px+4419px, 169px);
+  }
+
+  #linkedin {
+    @include position(absolute, 674px+4419px, 221px);
+  }
+
+  input {
+    width: 262px;
+    height: 45.79px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+  }
+
+  #name {
+    @include position(absolute, 4892px, 157px);
+  }
+
+  #email {
+    @include position(absolute, 4892px, 438px);
+  }
+
+  #lastButton {
+    width: 50px;
+    height: 47.7px;
+    @include position(absolute, 4889px, 719px);
+    border-radius: 10px 10px 10px 10px !important;
+    background: #35736e;
+    border: 1px solid #c4c4c4;
+  }
+
+  hr {
+    width: 1329.01px;
+    @include position(absolute, 674px+4498px, 65px);
+    border: 1px solid #d4d4d4;
+  }
+
+  #terms {
+    @include position(absolute, 674px+4528px, 942px);
+  }
+
+  #policy {
+    @include position(absolute, 674px+4528px, 1113px);
+  }
+
+  #copyright {
+    @include position(absolute, 674px+4635px, 549px);
+  }
+}

@@ -1,0 +1,900 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* Add additional styles as needed */
+@font-face {
+  font-family: "Post No Bills Colombo ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Colombo ExtraBold"), url("../fonts/PostNoBillsColombo-ExtraBold.woff") format("woff");
+}
+.header {
+  background: #35736e;
+  width: 1500px;
+  height: 674px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.navbar__ul {
+  display: flex;
+  position: absolute !important;
+  top: 28px !important;
+  left: 757px !important;
+  font-family: "Poppins";
+  gap: 34px;
+  justify-content: center;
+  list-style: none;
+}
+.navbar__ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar a:hover {
+  border-bottom: 5px solid #ffd748;
+}
+.navbar__logo {
+  cursor: pointer;
+  position: absolute !important;
+  top: 9px !important;
+  left: 35px !important;
+  color: #ffd748;
+  font-size: 55px;
+  font-family: "Post No Bills Colombo ExtraBold";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+#User_cicrle_duotone {
+  cursor: pointer;
+  position: absolute !important;
+  top: 25px !important;
+  left: 1390px !important;
+}
+
+#Basket_alt_3_duotone {
+  cursor: pointer;
+  position: absolute !important;
+  top: 25px !important;
+  left: 1430px !important;
+}
+
+#adText {
+  position: absolute !important;
+  top: 237px !important;
+  left: 99px !important;
+  color: #ffffff;
+  font-size: 55px;
+  font-family: "DM Serif Text";
+  font-weight: 700;
+  text-decoration: none !important;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#couch {
+  position: absolute !important;
+  top: 136px !important;
+  left: 602px !important;
+  z-index: 9999;
+}
+
+#dots {
+  position: absolute !important;
+  top: 212px !important;
+  left: 1166px !important;
+}
+
+button {
+  cursor: pointer !important;
+  border-radius: 30px !important;
+  width: 160px;
+  height: 50px;
+  font-family: "Poppins" !important;
+  font-size: 20px !important;
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+}
+
+#b1 {
+  position: absolute !important;
+  top: 460px !important;
+  left: 112px !important;
+  background: #ffd748;
+  border-color: #ffd748;
+}
+
+.b2 {
+  position: absolute !important;
+  top: 460px !important;
+  left: 296px !important;
+  border-color: rgb(255, 255, 255);
+  background: #35736e;
+}
+
+.mainPart {
+  width: 1500px;
+  height: 3950px;
+  background: #eff2f1;
+}
+.mainPart #title1 {
+  font-weight: 600 !important;
+  line-height: 51px;
+  color: #2f2f2f;
+  font-size: 34px;
+  font-family: "Poppins";
+  font-weight: 700;
+  text-decoration: none !important;
+  position: absolute !important;
+  top: 754.92px !important;
+  left: 99px !important;
+}
+.mainPart #viewPosts:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffd748;
+  text-decoration-thickness: 3px;
+}
+.mainPart .text {
+  font-weight: 400 !important;
+  line-height: 24px;
+  text-decoration: none !important;
+  color: #6a6a6a;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+.mainPart #text1 {
+  position: absolute !important;
+  top: 898.88px !important;
+  left: 99px !important;
+}
+.mainPart .second {
+  position: absolute !important;
+  top: 1006.14px !important;
+  left: 99px !important;
+  border-color: rgb(255, 255, 255);
+  background: #35736e;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 700;
+  text-decoration: none !important;
+  font-weight: 400;
+}
+.mainPart .chair {
+  width: 296px;
+  height: 288.86px;
+  border-radius: 20px;
+  background: rgba(53, 115, 110, 0.1019607843);
+  cursor: pointer;
+}
+.mainPart .chair .productN {
+  text-decoration: none !important;
+  font-family: "Poppins";
+  color: #2f2f2f !important;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.mainPart .chair #one {
+  position: absolute !important;
+  top: 191.94px !important;
+  left: 93px !important;
+}
+.mainPart .chair #two {
+  position: absolute !important;
+  top: 191.94px !important;
+  left: 83px !important;
+}
+.mainPart .chair #three {
+  position: absolute !important;
+  top: 191.94px !important;
+  left: 83px !important;
+}
+.mainPart .chair .price {
+  color: #2f2f2f !important;
+  text-decoration: none !important;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  position: absolute !important;
+  top: 215.47px !important;
+  left: 115px !important;
+}
+.mainPart .chair:hover {
+  box-shadow: 3px 5px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.mainPart #chair1 {
+  position: absolute !important;
+  top: 763.39px !important;
+  left: 431px !important;
+}
+.mainPart #chair1 #modernChair {
+  width: 189px;
+  height: 245.58px;
+  position: absolute;
+  left: 54px;
+  bottom: 114.79px;
+}
+.mainPart #chair2 {
+  position: absolute !important;
+  top: 769.97px !important;
+  left: 769px !important;
+}
+.mainPart #chair2 #kruzoChair {
+  width: 237px;
+  height: 240.88px;
+  position: absolute;
+  left: 44px;
+  bottom: 111.02px;
+}
+.mainPart #chair3 {
+  position: absolute !important;
+  top: 763.39px !important;
+  left: 1107px !important;
+}
+.mainPart #chair3 #ergonomicChair {
+  width: 157px;
+  height: 221.12px;
+  position: absolute;
+  left: 82px;
+  bottom: 114.79px;
+}
+.mainPart #title2 {
+  font-weight: 600 !important;
+  color: #2f2f2f;
+  font-size: 34px;
+  font-family: "Poppins";
+  font-weight: 700;
+  text-decoration: none !important;
+  position: absolute !important;
+  top: 1278.07px !important;
+  left: 99px !important;
+}
+.mainPart #text2 {
+  position: absolute !important;
+  top: 1333.58px !important;
+  left: 99px !important;
+}
+.mainPart #text3 {
+  position: absolute !important;
+  top: 1464.37px !important;
+  left: 99px !important;
+}
+.mainPart #text4 {
+  position: absolute !important;
+  top: 1624.33px !important;
+  left: 99px !important;
+}
+.mainPart #text5 {
+  position: absolute !important;
+  top: 1458.73px !important;
+  left: 357px !important;
+}
+.mainPart #text6 {
+  position: absolute !important;
+  top: 1624.33px !important;
+  left: 392px !important;
+}
+.mainPart #truck {
+  position: absolute !important;
+  top: 1400.05px !important;
+  left: 99px !important;
+}
+.mainPart #support {
+  position: absolute !important;
+  top: 1562.23px !important;
+  left: 99px !important;
+}
+.mainPart #Shopbag {
+  position: absolute !important;
+  top: 1398.51px !important;
+  left: 392px !important;
+}
+.mainPart #return {
+  position: absolute !important;
+  top: 1564.95px !important;
+  left: 393px !important;
+}
+.mainPart #ellipse {
+  position: absolute !important;
+  top: 1401.33px !important;
+  left: 110px !important;
+}
+.mainPart #ellipse1 {
+  position: absolute !important;
+  top: 1560.34px !important;
+  left: 110px !important;
+}
+.mainPart #ellipse2 {
+  position: absolute !important;
+  top: 1401.33px !important;
+  left: 402px !important;
+}
+.mainPart #ellipse3 {
+  position: absolute !important;
+  top: 1564.11px !important;
+  left: 402px !important;
+}
+.mainPart #dots2 {
+  position: absolute !important;
+  top: 1278.07px !important;
+  left: 750px !important;
+}
+.mainPart #room {
+  position: absolute !important;
+  top: 1322.27px !important;
+  left: 833px !important;
+}
+.mainPart #dots3 {
+  position: absolute !important;
+  top: 1984.7px !important;
+  left: 95px !important;
+}
+.mainPart #room1 {
+  position: absolute !important;
+  top: 2057.15px !important;
+  left: 208px !important;
+}
+.mainPart #room2 {
+  position: absolute !important;
+  top: 2056.21px !important;
+  left: 639px !important;
+}
+.mainPart #room3 {
+  position: absolute !important;
+  top: 2249.1px !important;
+  left: 587px !important;
+}
+.mainPart #title3 {
+  font-weight: 600 !important;
+  line-height: 41px;
+  color: #2f2f2f;
+  font-size: 34px;
+  font-family: "Poppins";
+  font-weight: 700;
+  text-decoration: none !important;
+  position: absolute !important;
+  top: 2118.31px !important;
+  left: 943px !important;
+}
+.mainPart #text7 {
+  position: absolute !important;
+  top: 2221.81px !important;
+  left: 943px !important;
+}
+.mainPart #text8 {
+  line-height: 19px !important;
+  position: absolute !important;
+  top: 2349.78px !important;
+  left: 960px !important;
+}
+.mainPart #text9 {
+  line-height: 19px !important;
+  position: absolute !important;
+  top: 2349.78px !important;
+  left: 1216px !important;
+}
+.mainPart #text10 {
+  line-height: 19px !important;
+  position: absolute !important;
+  top: 2406.23px !important;
+  left: 960px !important;
+}
+.mainPart #text11 {
+  line-height: 19px !important;
+  position: absolute !important;
+  top: 2406.23px !important;
+  left: 1216px !important;
+}
+.mainPart #circle1 {
+  position: absolute !important;
+  top: 2356.36px !important;
+  left: 939px !important;
+}
+.mainPart #circle2 {
+  position: absolute !important;
+  top: 2412.82px !important;
+  left: 939px !important;
+}
+.mainPart #circle3 {
+  position: absolute !important;
+  top: 2356.36px !important;
+  left: 1195px !important;
+}
+.mainPart #circle4 {
+  position: absolute !important;
+  top: 2412.82px !important;
+  left: 1195px !important;
+}
+.mainPart #button2 {
+  position: absolute !important;
+  top: 2493.74px !important;
+  left: 947px !important;
+}
+.mainPart #rec1 {
+  position: absolute !important;
+  top: 2811.77px !important;
+  left: 175px !important;
+}
+.mainPart #mod {
+  width: 91px;
+  height: 117.61px;
+  position: absolute !important;
+  top: 2789.18px !important;
+  left: 179px !important;
+}
+.mainPart #rec2 {
+  position: absolute !important;
+  top: 2811.77px !important;
+  left: 566px !important;
+}
+.mainPart #aero {
+  width: 113px;
+  height: 115.73px;
+  position: absolute !important;
+  top: 2788.24px !important;
+  left: 566px !important;
+}
+.mainPart #rec3 {
+  position: absolute !important;
+  top: 2804.24px !important;
+  left: 957px !important;
+}
+.mainPart #ergo {
+  width: 78px;
+  height: 111.97px;
+  position: absolute !important;
+  top: 2788.24px !important;
+  left: 965px !important;
+}
+.mainPart .name1 {
+  font-weight: 700px;
+  line-height: 22px;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+.mainPart #m {
+  position: absolute !important;
+  top: 2811.77px !important;
+  left: 306px !important;
+}
+.mainPart #k {
+  position: absolute !important;
+  top: 2811.77px !important;
+  left: 697px !important;
+}
+.mainPart #e {
+  position: absolute !important;
+  top: 2804.24px !important;
+  left: 1088px !important;
+}
+.mainPart #t1 {
+  position: absolute !important;
+  top: 2842.82px !important;
+  left: 306px !important;
+}
+.mainPart #t2 {
+  position: absolute !important;
+  top: 2842.82px !important;
+  left: 697px !important;
+}
+.mainPart #t3 {
+  position: absolute !important;
+  top: 2835.29px !important;
+  left: 1088px !important;
+}
+.mainPart .r {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 22px;
+  color: #6a6a6a;
+  font-size: 12px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+.mainPart #r1 {
+  position: absolute !important;
+  top: 2894.57px !important;
+  left: 306px !important;
+}
+.mainPart #r2 {
+  position: absolute !important;
+  top: 2894.57px !important;
+  left: 697px !important;
+}
+.mainPart #r3 {
+  position: absolute !important;
+  top: 2887.04px !important;
+  left: 1088px !important;
+}
+.mainPart .carousel {
+  width: 1081px;
+  height: 207px;
+  position: absolute !important;
+  top: 3031px !important;
+  left: 209px !important;
+}
+.mainPart .carousel-control-next,
+.mainPart .carousel-control-prev {
+  filter: invert(100%);
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #000000;
+  border-radius: 50% !important;
+  background-color: #6a6a6a;
+  opacity: 20%;
+  width: 70px !important;
+  height: 70px !important;
+  line-height: 70px !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+.mainPart .carousel-control-next:hover,
+.mainPart .carousel-control-prev:hover {
+  background-color: #0028b7;
+}
+.mainPart .carousel-item {
+  justify-content: center;
+  text-align: center;
+}
+.mainPart h5 {
+  font-family: "Poppins";
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 41px;
+  text-align: center;
+}
+.mainPart h3 {
+  color: #2f2f2f;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  line-height: 22px;
+  text-align: left;
+}
+.mainPart .carousel2 {
+  width: 165px;
+  height: 165px;
+  justify-content: center;
+  position: absolute !important;
+  top: 3484px !important;
+  left: 668px !important;
+}
+.mainPart .carousel2 img {
+  margin: auto;
+  margin-bottom: 13px;
+  width: 77px !important;
+  height: 77px;
+}
+.mainPart .ceoN {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+}
+.mainPart .ceoT {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #2f2f2f;
+}
+.mainPart #shipping {
+  position: absolute !important;
+  top: 1435.2px !important;
+  left: 99px !important;
+}
+.mainPart #support1 {
+  position: absolute !important;
+  top: 1595.16px !important;
+  left: 99px !important;
+}
+.mainPart #shop {
+  position: absolute !important;
+  top: 1435.2px !important;
+  left: 392px !important;
+}
+.mainPart #returns {
+  position: absolute !important;
+  top: 1595.16px !important;
+  left: 392px !important;
+}
+.mainPart .ideas {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: left;
+}
+.mainPart #id1 {
+  position: absolute !important;
+  top: 4243px !important;
+  left: 153px !important;
+}
+.mainPart #id2 {
+  position: absolute !important;
+  top: 4243px !important;
+  left: 543px !important;
+}
+.mainPart #id3 {
+  position: absolute !important;
+  top: 4243px !important;
+  left: 933px !important;
+}
+.mainPart #mask4 {
+  cursor: pointer;
+  position: absolute !important;
+  top: 3950px !important;
+  left: 153px !important;
+}
+.mainPart #mask5 {
+  cursor: pointer;
+  position: absolute !important;
+  top: 3950px !important;
+  left: 543px !important;
+}
+.mainPart #mask6 {
+  cursor: pointer;
+  position: absolute !important;
+  top: 3950px !important;
+  left: 933px !important;
+}
+.mainPart #title4 {
+  font-family: "Poppins";
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51px;
+  text-align: left;
+  position: absolute !important;
+  top: 3809px !important;
+  left: 156px !important;
+}
+.mainPart .by {
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+.mainPart .nana {
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16.94px;
+  text-align: left;
+}
+.mainPart #mail {
+  cursor: pointer;
+  position: absolute !important;
+  top: 4525.12px !important;
+  left: 92.57px !important;
+}
+.mainPart #viewPosts {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #2f2f2f;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 41px;
+  text-align: left;
+  position: absolute !important;
+  top: 3812px !important;
+  left: 1191px !important;
+}
+
+footer {
+  width: 1499px !important;
+  height: 767px !important;
+  background: #ffffff;
+}
+footer #sofa {
+  width: 458px;
+  height: 396.24px;
+  position: absolute !important;
+  top: 4478px !important;
+  left: 906px !important;
+}
+footer h4 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: left;
+  position: absolute !important;
+  top: 4709px !important;
+  left: 145px !important;
+}
+footer .text {
+  font-weight: 400 !important;
+  line-height: 24px;
+  text-decoration: none !important;
+  color: #6a6a6a;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+footer #subText {
+  position: absolute !important;
+  top: 4952px !important;
+  left: 101px !important;
+}
+footer #subF {
+  position: absolute !important;
+  top: 4952px !important;
+  left: 526px !important;
+  line-height: 28px;
+}
+footer #subS {
+  position: absolute !important;
+  top: 4952px !important;
+  left: 685px !important;
+}
+footer #subTh {
+  position: absolute !important;
+  top: 4950px !important;
+  left: 851px !important;
+}
+footer #subFo {
+  position: absolute !important;
+  top: 4952px !important;
+  left: 999px !important;
+}
+footer #logo {
+  font-weight: 400 !important;
+  position: absolute !important;
+  top: 4896px !important;
+  left: 101px !important;
+  color: #35736e;
+  font-size: 34px;
+  font-family: "Saira Stencil One";
+  font-weight: 700;
+  text-decoration: none !important;
+}
+footer a {
+  cursor: pointer;
+}
+footer .circleForIcons {
+  cursor: pointer;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  width: 41px;
+  height: 41px;
+}
+footer #facebook:hover {
+  position: absolute !important;
+  top: 5091px !important;
+  left: 65px !important;
+}
+footer #instagram:hover {
+  position: absolute !important;
+  top: 5091px !important;
+  left: 117px !important;
+}
+footer #twitter:hover {
+  position: absolute !important;
+  top: 5091px !important;
+  left: 169px !important;
+}
+footer #linkedin:hover {
+  position: absolute !important;
+  top: 5091px !important;
+  left: 221px !important;
+}
+footer .circleForIcons img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer #facebook {
+  position: absolute !important;
+  top: 5093px !important;
+  left: 65px !important;
+}
+footer #instagram {
+  position: absolute !important;
+  top: 5093px !important;
+  left: 117px !important;
+}
+footer #twitter {
+  position: absolute !important;
+  top: 5093px !important;
+  left: 169px !important;
+}
+footer #linkedin {
+  position: absolute !important;
+  top: 5093px !important;
+  left: 221px !important;
+}
+footer input {
+  width: 262px;
+  height: 45.79px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+}
+footer #name {
+  position: absolute !important;
+  top: 4892px !important;
+  left: 157px !important;
+}
+footer #email {
+  position: absolute !important;
+  top: 4892px !important;
+  left: 438px !important;
+}
+footer #lastButton {
+  width: 50px;
+  height: 47.7px;
+  position: absolute !important;
+  top: 4889px !important;
+  left: 719px !important;
+  border-radius: 10px 10px 10px 10px !important;
+  background: #35736e;
+  border: 1px solid #c4c4c4;
+}
+footer hr {
+  width: 1329.01px;
+  position: absolute !important;
+  top: 5172px !important;
+  left: 65px !important;
+  border: 1px solid #d4d4d4;
+}
+footer #terms {
+  position: absolute !important;
+  top: 5202px !important;
+  left: 942px !important;
+}
+footer #policy {
+  position: absolute !important;
+  top: 5202px !important;
+  left: 1113px !important;
+}
+footer #copyright {
+  position: absolute !important;
+  top: 5309px !important;
+  left: 549px !important;
+}
+
+/*# sourceMappingURL=style.css.map */
